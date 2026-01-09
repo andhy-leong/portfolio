@@ -99,13 +99,14 @@ nav {
 /* HERO */
 .hero {
   height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('ressources/andhy.png') center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("ressources/andhy.png") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #FFFFFF;
-  text-shadow: 0 0 20px rgba(0,0,0,0.8);
+  color: #ffffff;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 .hero h1 {
   font-size: 3rem;
@@ -176,8 +177,9 @@ h2 {
   padding: 1.5rem;
   flex: 1 1 300px;
   max-width: 350px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-  transition: transform 0.3s, background var(--transition), color var(--transition);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, background var(--transition),
+    color var(--transition);
 }
 
 .skill-card:hover {
@@ -215,7 +217,6 @@ h2 {
   text-align: center;
 }
 
-
 /* PROJECTS */
 .projects-grid {
   display: grid;
@@ -228,26 +229,26 @@ h2 {
   display: flex;
   flex-direction: column;
   background-color: var(--card);
-  color: var(--text); 
+  color: var(--text);
   padding: 1.5rem;
   border-radius: var(--radius);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .project-card h3 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  color: var(--accent); 
+  color: var(--accent);
 }
 
 .project-card p {
-  flex-grow: 1; 
+  flex-grow: 1;
   font-size: 1rem;
   margin-bottom: 1rem;
 }
@@ -260,8 +261,8 @@ h2 {
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
   text-decoration: none;
-  background-color: var(--accent); 
-  color: #fff; 
+  background-color: var(--accent);
+  color: #fff;
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
@@ -324,7 +325,9 @@ footer {
   text-align: center;
 }
 
-.footer-left, .footer-center, .footer-right {
+.footer-left,
+.footer-center,
+.footer-right {
   flex: 1;
   min-width: 250px;
 }
@@ -337,7 +340,8 @@ footer {
   object-fit: cover;
 }
 
-.footer-center h3, .footer-right h3 {
+.footer-center h3,
+.footer-right h3 {
   font-size: 1.4rem;
   color: var(--accent);
   margin-bottom: 1rem;
@@ -397,9 +401,9 @@ body.light .footer-bottom {
 
 .carousel-container {
   position: relative;
-  width: 120px; 
+  width: 120px;
   height: 120px;
-  margin: 0 auto; 
+  margin: 0 auto;
   overflow: hidden;
   border-radius: 50%;
   border: 3px solid var(--accent);
@@ -416,8 +420,8 @@ body.light .footer-bottom {
   width: 120px;
   height: 120px;
   object-fit: cover;
-  flex-shrink: 0; 
-  border-radius: 0; 
+  flex-shrink: 0;
+  border-radius: 0;
   border: none;
 }
 
@@ -431,7 +435,7 @@ body.light .footer-bottom {
   cursor: pointer;
   padding: 0.5rem;
   z-index: 10;
-  opacity: 0; 
+  opacity: 0;
   transition: opacity 0.3s ease;
 }
 
@@ -509,8 +513,9 @@ body.light .footer-bottom {
   color: var(--text);
   border-radius: var(--radius);
   padding: 1.2rem 1.5rem;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-  transition: background var(--transition), color var(--transition), transform 0.3s;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: background var(--transition), color var(--transition),
+    transform 0.3s;
 }
 
 .language-card:hover {
@@ -534,14 +539,14 @@ body.light .footer-bottom {
 .progress-bar {
   width: 100%;
   height: 8px;
-  background: rgba(255,255,255,0.15);
+  background: rgba(255, 255, 255, 0.15);
   border-radius: 4px;
   overflow: hidden;
   margin-bottom: 0.5rem;
 }
 
 body.light .progress-bar {
-  background: rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .progress {
@@ -567,7 +572,7 @@ body.light .progress-bar {
   border-radius: var(--radius);
   text-decoration: none;
   background-color: var(--accent);
-  color: #fff; 
+  color: #fff;
   font-weight: bold;
   transition: all var(--transition);
   border: 2px solid var(--accent);
@@ -594,9 +599,9 @@ body.light .progress-bar {
 #footer-3d-container {
   flex-basis: 100%;
   width: 100%;
-  height: 200px; 
-  margin-bottom: 2rem; 
-  cursor: grab; 
+  height: 200px;
+  margin-bottom: 2rem;
+  cursor: grab;
 }
 
 #footer-3d-container:active {
@@ -607,7 +612,7 @@ body.light .progress-bar {
 
 .scroll-btn {
   position: fixed;
-  right: 15px; 
+  right: 15px;
   width: 35px;
   height: 35px;
   background-color: var(--accent);
@@ -618,9 +623,9 @@ body.light .progress-bar {
   justify-content: center;
   text-decoration: none;
   font-size: 0.8rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   z-index: 999;
-  
+
   opacity: 0;
   transform: scale(0);
   visibility: hidden;
@@ -649,23 +654,23 @@ body.light .progress-bar {
 
 .formation-item .experience-list {
   list-style: none;
-  padding: 0; 
-  margin-top: 0.75rem; 
-  margin-bottom: 0; 
+  padding: 0;
+  margin-top: 0.75rem;
+  margin-bottom: 0;
 }
 
 .formation-item .experience-list li {
   position: relative;
-  padding-left: 1.5rem; 
-  margin-bottom: 0.5rem; 
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .formation-item .experience-list li::before {
-  content: "▶"; 
+  content: "▶";
   position: absolute;
   left: 0;
   top: 0;
   color: var(--accent);
   font-size: 0.8rem;
-  line-height: 1.4; 
+  line-height: 1.4;
 }
