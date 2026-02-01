@@ -34,6 +34,7 @@ const translations = {
     "nav-projets": "Projets",
     titre: "RAHARISON Leong Foc Sing Andhy",
     "sous-titre": "Étudiant en troisième année de BUT Informatique",
+    "hero-typing": "Étudiant en BUT Informatique | Développeur Fullstack",
     "apropos-titre": "Me concernant",
     "apropos-texte1":
       "Étudiant en troisième année de BUT Informatique, spécialisé dans le développement d'applications et de logiciels.",
@@ -108,6 +109,7 @@ const translations = {
     "nav-projets": "Projects",
     titre: "RAHARISON Leong Foc Sing Andhy",
     "sous-titre": "Third-year Computer Science Student",
+    "hero-typing": "Computer Science Student | Fullstack Developer",
     "apropos-titre": "About Me",
     "apropos-texte1":
       "Third-year student in Computer Science, specializing in application and software development.",
@@ -180,6 +182,7 @@ const translations = {
     "nav-projets": "Tetikasa",
     titre: "RAHARISON Leong Foc Sing Andhy",
     "sous-titre": "Mpiana-draharaha taona fahatelo amin'ny Siansa Informatika",
+    "hero-typing": "Mpianatra Informatika | Mpamorona Fullstack",
     "apropos-titre": "Mombamomba ahy",
     "apropos-texte1":
       "Mpianatra taona fahatelo amin’ny sehatry ny Informatika, misampana amin’ny fampivoarana rindranasa sy rindrambaiko.",
@@ -319,6 +322,10 @@ document.getElementById("lang-select").addEventListener("change", (e) => {
     }
   });
 
+  if (translations[lang] && translations[lang]["hero-typing"]) {
+    startTypeWriter(translations[lang]["hero-typing"]);
+  }
+
   // Modifie le CV en fonction de la langue
   if (lang === "en") {
     // Bouton du footer
@@ -370,3 +377,66 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+// --- SCROLL REVEAL ---
+const revealElements = document.querySelectorAll(
+  "section h2, .about-content p, .formation-item, .skill-card, .project-card, .language-card",
+);
+
+// On ajoute la classe de base
+revealElements.forEach((el) => el.classList.add("reveal"));
+
+const revealOnScroll = () => {
+  const windowHeight = window.innerHeight;
+  const elementVisible = 80;
+
+  revealElements.forEach((el) => {
+    const elementTop = el.getBoundingClientRect().top;
+    if (elementTop < windowHeight - elementVisible) {
+      el.classList.add("active");
+    }
+  });
+};
+
+window.addEventListener("scroll", revealOnScroll);
+// Appel initial au cas où on est déjà au milieu de page
+revealOnScroll();
+// --- BARRE DE PROGRESSION ---
+window.addEventListener("scroll", () => {
+  const winScroll =
+    document.body.scrollTop || document.documentElement.scrollTop;
+  const height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  const scrolled = (winScroll / height) * 100;
+  document.getElementById("scroll-progress").style.width = scrolled + "%";
+});
+// --- EFFET MACHINE A ECRIRE DYNAMIQUE ---
+const typingElement = document.getElementById("typing-text");
+let typeInterval; // Variable pour stocker le timer
+let charIndex = 0;
+
+function startTypeWriter(text) {
+  // On nettoie tout avant de commencer
+  if (typeInterval) clearTimeout(typeInterval);
+  typingElement.textContent = "";
+  charIndex = 0;
+
+  // Fonction interne de frappe
+  function type() {
+    if (charIndex < text.length) {
+      typingElement.textContent += text.charAt(charIndex);
+      charIndex++;
+      typeInterval = setTimeout(type, 50); // Vitesse de frappe
+    }
+  }
+
+  type();
+}
+
+const currentLang = document.getElementById("lang-select").value || "fr";
+if (translations[currentLang] && translations[currentLang]["hero-typing"]) {
+  setTimeout(
+    () => startTypeWriter(translations[currentLang]["hero-typing"]),
+    1000,
+  );
+}

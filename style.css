@@ -688,3 +688,45 @@ body.light .progress-bar {
   font-size: 0.8rem;
   line-height: 1.4;
 }
+/* --- SCROLL REVEAL ANIMATION --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* On peut ajouter un délai pour les enfants (comme les cartes) */
+.project-card,
+.skill-card,
+.formation-item {
+  transition-delay: 0.1s;
+}
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background: var(--accent);
+  z-index: 1001; /* Au-dessus du header */
+  transition: width 0.1s;
+}
+.cursor {
+  display: inline-block;
+  animation: blink 0.7s infinite;
+  color: var(--accent);
+}
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
