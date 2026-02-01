@@ -72,7 +72,7 @@ const translations = {
     "learnmalagasy-desc":
       "Conception d'une application web d'apprentissage du malgache, développée entièrement en HTML, CSS et JavaScript pur. Toute la logique de progression par niveaux, les leçons interactives et les quiz sont gérés côté client, avec une sauvegarde de l'avancement de l'utilisateur dans le localStorage du navigateur.",
     "medibox-desc":
-      "Développement d'une boîte à médicament connectée, intégrant Arduino, l'IoT et une interface web/mobile, afin de permettre auxpatients, techniciens, aide-soignants et médecins de gérer et suivre l'évolution des traitements.",
+      "Développement d'une boîte à médicament connectée, intégrant Arduino, l'IoT et une interface web/mobile, afin de permettre aux patients, techniciens, aide-soignants et médecins de gérer et suivre l'évolution des traitements.",
     "motos-desc":
       "Application de gestion de catalogue exploitant la puissance de la base de données Cassandra pour le stockage de données distribuées, entièrement conteneurisée avec Docker.",
     "langues-titre": "Langues",
