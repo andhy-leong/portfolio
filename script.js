@@ -71,6 +71,10 @@ const translations = {
     "multimedia-desc": "Tous mes projets réalisés en initiation multimédia.",
     "learnmalagasy-desc":
       "Conception d'une application web d'apprentissage du malgache, développée entièrement en HTML, CSS et JavaScript pur. Toute la logique de progression par niveaux, les leçons interactives et les quiz sont gérés côté client, avec une sauvegarde de l'avancement de l'utilisateur dans le localStorage du navigateur.",
+    "medibox-desc":
+      "Développement d'une boîte à médicament connectée, intégrant Arduino, l'IoT et une interface web/mobile, afin de permettre auxpatients, techniciens, aide-soignants et médecins de gérer et suivre l'évolution des traitements.",
+    "motos-desc":
+      "Application de gestion de catalogue exploitant la puissance de la base de données Cassandra pour le stockage de données distribuées, entièrement conteneurisée avec Docker.",
     "langues-titre": "Langues",
     "lang-fr": "Français",
     "niveau-fr": "Langue maternelle",
@@ -141,6 +145,10 @@ const translations = {
     "multimedia-desc": "All my projects from the multimedia initiation course.",
     "learnmalagasy-desc":
       "Designed a web application for learning Malagasy, developed entirely in pure HTML, CSS, and JavaScript. All logic for level progression, interactive lessons, and quizzes is handled client-side, with user progress saved in the browser's localStorage.",
+    "medibox-desc":
+      "Development of a connected pill dispenser integrating Arduino, IoT, and a web/mobile interface, enabling patients, technicians, caregivers, and doctors to manage and monitor treatment progress.",
+    "motos-desc":
+      "A catalog management application leveraging the power of the Cassandra database for distributed data storage, fully containerized with Docker.",
     "langues-titre": "Languages",
     "lang-fr": "French",
     "niveau-fr": "Native",
@@ -210,6 +218,10 @@ const translations = {
       "Ny tetikasako rehetra tamin'ny fampidirana amin'ny haino aman-jery.",
     "learnmalagasy-desc":
       "Famolavolana rindrambaiko an-tranonkala hianarana teny malagasy, namboarina tamin'ny HTML, CSS, ary JavaScript madio tanteraka. Ny lojika rehetra momba ny fandrosoana isan-tsokajiny, ny lesona ifandrimbonana, ary ny quiz dia tantanina eo amin'ny lafiny client, ary voatahiry ao amin'ny localStorage ny fivoaran'ny mpampiasa.",
+    "medibox-desc":
+      "Fampandrosoana boaty fitehirizana fanafody marani-tsaina mampiditra Arduino, IoT ary sehatra web/mobile, ahafahan’ny marary, teknisiana, mpanampy mpitsabo ary dokotera mitantana sy manara-maso ny fivoaran’ny fitsaboana.",
+    "motos-desc":
+      "Rindranasa fitantanana katalaogy mampiasa ny herin’ny tahiry angona Cassandra ho an’ny fitahirizana angona zaraina, ary voatahiry tanteraka ao anaty Docker.",
     "langues-titre": "Fiteny",
     "lang-fr": "Frantsay",
     "niveau-fr": "Teny nibeazana",
