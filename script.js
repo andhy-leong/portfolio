@@ -94,12 +94,17 @@ const translations = {
     "cv-download-header": "Mon CV",
     "experiences-titre": "Expériences Professionnelles",
     "exp1-titre":
-      "Stagiaire - IMREDD (Institut Méditerranéen du Risque de l’Environnement et du Développement Durable)",
+      "Stage - IMREDD (Institut Méditerranéen du Risque de l’Environnement et du Développement Durable)",
     "exp1-dates": "Avril 2025 - Juin 2025",
     "exp1-desc":
       "Conception d’une architecture de récupération et de formatage de données",
     "exp2-desc":
       "Utilisation de Grafana pour la visualisation des données collectées",
+    "exp2-titre":
+      "Stage - DNIIT Vietnam (Danang International Institute of Technology)",
+    "exp2-dates": "Avril 2026 - Juin 2026",
+    "exp3-desc":
+      "Développement d’une application mobile de cartographie d’urgence et de communication SOS",
   },
   en: {
     "nav-accueil": "Home",
@@ -173,6 +178,11 @@ const translations = {
     "exp1-dates": "April 2025 - June 2025",
     "exp1-desc": "Design of a data retrieval and formatting architecture",
     "exp2-desc": "Use of Grafana for visualizing collected data",
+    "exp2-titre":
+      "Intern - DNIIT Vietnam (Danang International Institute of Technology)",
+    "exp2-dates": "April 2026 - June 2026",
+    "exp3-desc":
+      "Development of a mobile application for emergency mapping and SOS communication",
   },
   mg: {
     "nav-accueil": "Fandraisana",
@@ -248,6 +258,11 @@ const translations = {
     "exp1-desc": "Famolavolana rafitra fakana sy fandrafetana angon-drakitra",
     "exp2-desc":
       "Fampiasana Grafana ho an'ny fanehoana an-tsary ny angona voaangona",
+    "exp2-titre":
+      "Mpiofana - DNIIT Vietnam (Danang International Institute of Technology)",
+    "exp2-dates": "Aprily 2026 - Jona 2026",
+    "exp3-desc":
+      "Fampivoarana fampiharana finday ho an'ny sarintany vonjy maika sy fifandraisana SOS",
   },
 };
 
